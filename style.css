@@ -1,0 +1,974 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+
+:root {
+    --plum: #35152F;
+    --sage: #7C8B68;
+    --gold: #D8B77A;
+    --blush: #E8C8C8;
+    --ivory: #FAF5EC;
+    --dark: #21151F;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: var(--ivory);
+    color: var(--dark);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* HEADER */
+
+header {
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7%;
+    background: var(--ivory);
+    border-bottom: 1px solid #ddd2c4;
+}
+
+
+.logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 34px;
+    letter-spacing: 5px;
+    color: var(--plum);
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+nav a:hover {
+    color: var(--plum);
+}
+
+
+.cart {
+    color: var(--plum);
+    font-size: 13px;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 650px;
+    background:
+        radial-gradient(circle at 85% 20%, var(--blush), transparent 25%),
+        linear-gradient(120deg, var(--plum), #54234c);
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.hero-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: var(--gold);
+    margin-bottom: 18px;
+}
+
+
+.hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100px;
+    line-height: .85;
+    font-weight: 500;
+}
+
+
+.hero h1 span {
+    color: var(--blush);
+    font-style: italic;
+}
+
+
+.hero p {
+    margin: 30px 0;
+    line-height: 1.8;
+}
+
+
+button {
+    border: 1px solid var(--gold);
+    background: var(--gold);
+    color: var(--plum);
+    padding: 15px 28px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+button:hover {
+    background: transparent;
+    color: white;
+}
+
+
+.hero-pattern {
+    position: absolute;
+    right: 10%;
+    font-size: 300px;
+    color: rgba(216,183,122,.12);
+    transform: rotate(20deg);
+}
+
+
+/* CATEGORIES */
+
+.categories {
+    padding: 110px 8%;
+    text-align: center;
+}
+
+
+.categories h2,
+.collection h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    color: var(--plum);
+    margin-bottom: 60px;
+}
+
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.category {
+    width: 30%;
+    padding: 45px 30px;
+    border-top: 2px solid var(--gold);
+    background: #f4ecdf;
+    text-align: left;
+}
+
+
+.category span {
+    color: var(--sage);
+}
+
+
+.category h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    margin: 25px 0 10px;
+}
+
+
+/* COLLECTION */
+
+.collection {
+    background: #efe6d8;
+    padding: 110px 8%;
+    text-align: center;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.product {
+    background: var(--ivory);
+    width: 31%;
+    text-align: left;
+}
+
+
+.product-img {
+    height: 380px;
+    background:
+        linear-gradient(135deg, #8b526d, #d8a6a7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,.7);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+
+.product-two {
+    background:
+        linear-gradient(135deg, #637154, #aeb99c);
+}
+
+
+.product-three {
+    background:
+        linear-gradient(135deg, #b69a68, #ead7ae);
+}
+
+
+.product-info {
+    padding: 25px;
+}
+
+
+.product-info h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 25px;
+}
+
+
+.product-info p {
+    margin: 10px 0 20px;
+    color: var(--sage);
+}
+
+
+.product-info button {
+    background: var(--plum);
+    color: white;
+    border: none;
+}
+
+
+/* STORY */
+
+.story {
+    padding: 120px 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    background: var(--plum);
+    color: white;
+}
+
+
+.story h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    font-weight: 400;
+}
+
+
+.story-text {
+    line-height: 2;
+    padding-top: 30px;
+}
+
+
+.story-text p {
+    margin-bottom: 25px;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+
+.newsletter h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: var(--plum);
+}
+
+
+.newsletter input {
+    margin-top: 30px;
+    padding: 16px;
+    width: 300px;
+    border: none;
+    border-bottom: 1px solid var(--plum);
+    background: transparent;
+    outline: none;
+}
+
+
+.newsletter button {
+    margin-left: 10px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    background: var(--sage);
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+
+.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+
+.contact p {
+    margin-top: 15px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background: var(--dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        min-height: 550px;
+        padding: 60px 8%;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .category-container,
+    .products,
+    .story {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
+
+    .category,
+    .product {
+        width: 100%;
+    }
+
+    .products {
+        display: flex;
+    }
+
+    .categories h2,
+    .collection h2 {
+        font-size: 45px;
+    }
+
+}
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.cart-box {
+    margin: 25px auto;
+    padding: 15px;
+    background: #222;
+    color: white;
+    width: fit-content;
+}
+
+.cart-summary {
+    margin: 50px auto 0;
+    max-width: 700px;
+    padding: 30px;
+    background: white;
+    text-align: center;
+}
+
+.cart-summary h3 {
+    margin: 15px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item button {
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.whatsapp-btn {
+    margin-top: 20px;
+    padding: 14px 25px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+/* ================= CART FIX ================= */
+
+.cart-box {
+    display: block !important;
+    width: 90% !important;
+    max-width: 600px !important;
+    margin: 40px auto !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.cart-summary {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    color: #222 !important;
+    background: #ffffff !important;
+    padding: 25px !important;
+    border: 1px solid #ddd !important;
+}
+
+.cart-summary h3 {
+    display: block !important;
+    color: #222 !important;
+    visibility: visible !important;
+}
+
+#cart-items {
+    display: block !important;
+    color: #222 !important;
+    visibility: visible !important;
+    min-height: 40px;
+}
+
+#cart-items p {
+    display: block !important;
+    color: #555 !important;
+    visibility: visible !important;
+}
+
+.cart-item {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 15px 0 !important;
+    border-bottom: 1px solid #ddd !important;
+    color: #222 !important;
+    visibility: visible !important;
+}
+
+.cart-product-info {
+    display: block !important;
+    color: #222 !important;
+}
+
+.cart-product-info strong {
+    display: block !important;
+    color: #222 !important;
+    font-size: 16px !important;
+}
+
+.cart-product-info p {
+    display: block !important;
+    color: #555 !important;
+    margin: 5px 0 !important;
+}
+
+.cart-item button {
+    display: block !important;
+    color: #222 !important;
+    background: #eee !important;
+    padding: 8px 12px !important;
+    border: 1px solid #ccc !important;
+    cursor: pointer !important;
+}
+
+.cart-total {
+    display: block !important;
+    color: #222 !important;
+    margin-top: 20px !important;
+}
+
+#cart-total {
+    color: #222 !important;
+    font-weight: bold !important;
+}
+
+.whatsapp-btn {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 15px !important;
+    padding: 14px !important;
+    color: white !important;
+    background: #e2dda0 !important;
+    border: none !important;
+    cursor: pointer !important;
+    font-weight: bold !important;
+}
+/* ================= KRISHARA ANIMATIONS ================= */
+
+/* Page Load */
+body {
+    animation: pageFade 1s ease;
+}
+
+@keyframes pageFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Hero Animation */
+.hero-content {
+    animation: heroText 1.2s ease;
+}
+
+@keyframes heroText {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Product Card */
+.product {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Product Image Zoom */
+.product-img {
+    overflow: hidden;
+}
+
+.product-img img {
+    transition:
+        transform 0.6s ease;
+}
+
+.product:hover .product-img img {
+    transform: scale(1.08);
+}
+
+
+/* Buttons */
+button {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        opacity 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+
+/* Navigation */
+nav a {
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: -5px;
+
+    width: 0;
+    height: 1px;
+
+    transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+/* Category Cards */
+.category {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.category:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Cart Count */
+#cartCount {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.cart:hover #cartCount {
+    transform: scale(1.25);
+}
+
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.25);
+}
+/* ================= WHY KRISHARA ================= */
+
+.why-krishara {
+    padding: 100px 8%;
+    text-align: center;
+    background: var(--ivory);
+}
+
+.why-krishara h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: var(--plum);
+    margin-bottom: 50px;
+}
+
+.why-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.why-card {
+    width: 30%;
+    padding: 40px 25px;
+    background: #f4ecdf;
+    transition: 0.3s;
+}
+
+.why-card:hover {
+    transform: translateY(-8px);
+}
+
+.why-icon {
+    font-size: 35px;
+    color: var(--gold);
+    margin-bottom: 20px;
+}
+
+.why-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+    color: var(--plum);
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    line-height: 1.8;
+}
+@media (max-width: 768px) {
+
+    .why-container {
+        flex-direction: column;
+    }
+
+    .why-card {
+        width: 100%;
+    }
+
+}
+/* ================= STYLE QUIZ ================= */
+
+.style-quiz {
+    padding: 100px 8%;
+    text-align: center;
+    background: var(--plum);
+    color: white;
+}
+
+.style-quiz h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.quiz-text {
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.quiz-options {
+    margin-top: 35px;
+}
+
+.quiz-options button {
+    margin: 10px;
+}
+
+#style-result {
+    margin-top: 35px;
+    color: var(--gold);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 28px;
+}
+/* ================= FASHION JOURNAL ================= */
+
+.journal {
+    padding: 100px 8%;
+    text-align: center;
+    background: #efe6d8;
+}
+
+.journal h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: var(--plum);
+    margin-bottom: 50px;
+}
+
+.journal-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.journal-card {
+    width: 30%;
+    background: white;
+    padding: 35px;
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.journal-card:hover {
+    transform: translateY(-8px);
+}
+
+.journal-card span {
+    color: var(--sage);
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.journal-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: var(--plum);
+    margin: 20px 0;
+}
+
+.journal-card p {
+    line-height: 1.8;
+}
+
+.journal-card button {
+    margin-top: 25px;
+}
+
+
+/* ARTICLE RESULT */
+
+#journal-result {
+    max-width: 750px;
+    margin: 40px auto 0;
+
+    padding: 30px;
+
+    background: white;
+
+    line-height: 1.8;
+
+    color: var(--dark);
+}
+@media (max-width: 768px) {
+
+    .journal-container {
+        flex-direction: column;
+    }
+
+    .journal-card {
+        width: 100%;
+    }
+
+}
+/* ================= FEATURED LOOKS ================= */
+
+.featured-looks {
+    padding: 100px 8%;
+    text-align: center;
+    background: var(--ivory);
+}
+
+.featured-looks h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 55px;
+    color: var(--plum);
+    margin-bottom: 20px;
+}
+
+.featured-text {
+    max-width: 600px;
+    margin: 0 auto 50px;
+    line-height: 1.8;
+}
+
+.looks-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.look-card {
+    width: 30%;
+    padding: 45px 30px;
+    background: #f4ecdf;
+    text-align: left;
+    border-bottom: 2px solid var(--gold);
+
+    transition: 0.3s;
+}
+
+.look-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.10);
+}
+
+.look-number {
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--sage);
+}
+
+.look-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: var(--plum);
+    margin: 25px 0 15px;
+}
+
+.look-card p {
+    line-height: 1.8;
+}
+
+.look-card button {
+    margin-top: 25px;
+}
+
+/* RESULT */
+
+#look-result {
+    max-width: 750px;
+    margin: 40px auto 0;
+    padding: 30px;
+    background: var(--plum);
+    color: white;
+    line-height: 1.8;
+}
+
+#look-result h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+
+    .looks-container {
+        flex-direction: column;
+    }
+
+    .look-card {
+        width: 100%;
+    }
+
+}
