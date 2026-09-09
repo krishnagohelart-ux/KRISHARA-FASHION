@@ -1,0 +1,694 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KRISHARA | Luxury Fashion</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        KRISHARA
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+
+        <a href="#collection">Collection</a>
+
+        <a href="#about">Our Story</a>
+
+        <a href="#contact">Contact</a>
+
+        <span class="cart">
+            🛍 Cart
+            <span id="cartCount">0</span>
+        </span>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            THE KRISHARA EDIT
+        </p>
+
+        <h1>
+            Wear Your<br>
+            <span>Story.</span>
+        </h1>
+
+        <p>
+            Contemporary fashion inspired by timeless Indian elegance.
+        </p>
+
+        <button onclick="scrollToCollection()">
+            EXPLORE COLLECTION
+        </button>
+
+    </div>
+
+    <div class="hero-pattern">
+        ✦
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories">
+
+    <p class="small-title">
+        DISCOVER
+    </p>
+
+    <h2>
+        Curated For You
+    </h2>
+
+    <div class="category-container">
+
+        <div class="category">
+
+            <span>01</span>
+
+            <h3>
+                Festive Edit
+            </h3>
+
+            <p>
+                Elegant pieces for unforgettable moments.
+            </p>
+
+        </div>
+
+
+        <div class="category">
+
+            <span>02</span>
+
+            <h3>
+                Everyday Luxe
+            </h3>
+
+            <p>
+                Effortless style for every day.
+            </p>
+
+        </div>
+
+
+        <div class="category">
+
+            <span>03</span>
+
+            <h3>
+                New Arrivals
+            </h3>
+
+            <p>
+                Discover what is new at KRISHARA.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COLLECTION ================= -->
+
+<section id="collection" class="collection">
+
+
+    <!-- CART -->
+
+    <div class="cart-box">
+
+        <div class="cart-summary">
+
+            <h3>
+                Your Cart
+            </h3>
+
+            <div id="cart-items">
+
+                <p>
+                    Your cart is empty.
+                </p>
+
+            </div>
+
+
+            <div class="cart-total">
+
+                <h3>
+                    Total: ₹<span id="cart-total">0</span>
+                </h3>
+
+            </div>
+
+
+            <button
+                class="whatsapp-btn"
+                onclick="orderOnWhatsApp()">
+
+                Order on WhatsApp
+
+            </button>
+
+        </div>
+
+    </div>
+     
+    </section>
+
+
+ <!-- ================= WHY KRISHARA ================= -->
+
+<section class="why-krishara">
+
+    <p class="small-title">
+        WHY KRISHARA
+    </p>
+
+    <h2>
+        Fashion Made For Your Story
+    </h2>
+
+    <div class="why-container">
+
+        <div class="why-card">
+
+            <div class="why-icon">✦</div>
+
+            <h3>Premium Quality</h3>
+
+            <p>
+                Carefully selected fabrics designed for comfort,
+                elegance and everyday confidence.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">♡</div>
+
+            <h3>Timeless Style</h3>
+
+            <p>
+                Modern fashion inspired by the beauty of
+                timeless Indian elegance.
+            </p>
+
+        </div>
+
+
+        <div class="why-card">
+
+            <div class="why-icon">✿</div>
+
+            <h3>Made To Express You</h3>
+
+            <p>
+                Every KRISHARA piece is designed to help
+                you wear your own story.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= STYLE QUIZ ================= -->
+
+<section class="style-quiz">
+
+    <p class="small-title">
+        DISCOVER YOUR STYLE
+    </p>
+
+    <h2>
+        What's Your Fashion Mood?
+    </h2>
+
+    <p class="quiz-text">
+        Choose the style that describes you best and discover
+        your KRISHARA fashion personality.
+    </p>
+
+
+    <div class="quiz-options">
+
+        <button onclick="showStyle('Elegant')">
+            ✦ Elegant
+        </button>
+
+        <button onclick="showStyle('Modern')">
+            ✦ Modern
+        </button>
+
+        <button onclick="showStyle('Traditional')">
+            ✦ Traditional
+        </button>
+
+    </div>
+
+
+    <h3 id="style-result"></h3>
+
+</section>
+<!-- ================= FASHION JOURNAL ================= -->
+
+<section class="journal">
+
+    <p class="small-title">
+        THE KRISHARA JOURNAL
+    </p>
+
+    <h2>
+        Style Stories & Inspiration
+    </h2>
+
+    <div class="journal-container">
+
+
+        <!-- ARTICLE 1 -->
+
+        <div class="journal-card">
+
+            <span>STYLE GUIDE</span>
+
+            <h3>
+                How To Style A Kurta For Every Occasion
+            </h3>
+
+            <p>
+                Discover simple ways to style a kurta for college,
+                celebrations and special occasions.
+            </p>
+
+            <button onclick="showJournal('kurta')">
+                READ MORE
+            </button>
+
+        </div>
+
+
+        <!-- ARTICLE 2 -->
+
+        <div class="journal-card">
+
+            <span>FASHION EDIT</span>
+
+            <h3>
+                Three Colours That Define Modern Elegance
+            </h3>
+
+            <p>
+                Explore beautiful colour combinations that bring
+                elegance and confidence to your wardrobe.
+            </p>
+
+            <button onclick="showJournal('colours')">
+                READ MORE
+            </button>
+
+        </div>
+
+
+        <!-- ARTICLE 3 -->
+
+        <div class="journal-card">
+
+            <span>KRISHARA EDIT</span>
+
+            <h3>
+                From Tradition To Modern Style
+            </h3>
+
+            <p>
+                Discover how Indian craftsmanship inspires
+                contemporary fashion today.
+            </p>
+
+            <button onclick="showJournal('tradition')">
+                READ MORE
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESULT -->
+
+    <div id="journal-result"></div>
+
+</section>
+<!-- ================= FEATURED LOOKS ================= -->
+
+<section class="featured-looks">
+
+    <p class="small-title">
+        TRENDING NOW
+    </p>
+
+    <h2>
+        Featured Looks
+    </h2>
+
+    <p class="featured-text">
+        Explore our favourite looks designed for every mood,
+        every moment and every story.
+    </p>
+
+
+    <div class="looks-container">
+
+
+        <!-- LOOK 1 -->
+
+        <div class="look-card">
+
+            <div class="look-number">
+                01
+            </div>
+
+            <h3>
+                The Festive Muse
+            </h3>
+
+            <p>
+                A graceful look inspired by celebration,
+                colour and timeless elegance.
+            </p>
+
+            <button onclick="showLook('festive')">
+                EXPLORE LOOK
+            </button>
+
+        </div>
+
+
+        <!-- LOOK 2 -->
+
+        <div class="look-card">
+
+            <div class="look-number">
+                02
+            </div>
+
+            <h3>
+                Everyday Chic
+            </h3>
+
+            <p>
+                Comfortable, modern and effortlessly stylish
+                for your everyday moments.
+            </p>
+
+            <button onclick="showLook('everyday')">
+                EXPLORE LOOK
+            </button>
+
+        </div>
+
+
+        <!-- LOOK 3 -->
+
+        <div class="look-card">
+
+            <div class="look-number">
+                03
+            </div>
+
+            <h3>
+                Evening Elegance
+            </h3>
+
+            <p>
+                Sophisticated details and timeless silhouettes
+                for unforgettable occasions.
+            </p>
+
+            <button onclick="showLook('evening')">
+                EXPLORE LOOK
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESULT -->
+
+    <div id="look-result"></div>
+
+</section>
+
+    <!-- COLLECTION TITLE -->
+
+    <p class="small-title">
+        SHOP KRISHARA
+    </p>
+
+    <h2>
+        The Collection
+    </h2>
+
+
+    <!-- PRODUCTS -->
+
+    <div class="products">
+
+    <!-- PRODUCT 1 -->
+    <div class="product">
+
+        <div class="product-img">
+            <img
+                src="./images/test.jpg"
+                alt="Rosewood Kurta Set">
+        </div>
+
+        <div class="product-info">
+
+            <h3>
+                Rosewood Kurta Set
+            </h3>
+
+            <p>
+                ₹2,499
+            </p>
+
+            <button
+                onclick="addToCart('Rosewood Kurta Set', 2499)">
+
+                ADD TO BAG
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+    <div class="product">
+
+        <div class="product-img">
+            <img
+                src="images/kurta.jpg.jpg"
+                alt="Sage Grace Dress">
+        </div>
+
+        <div class="product-info">
+
+            <h3>
+                Sage Grace Dress
+            </h3>
+
+            <p>
+                ₹2,999
+            </p>
+
+            <button
+                onclick="addToCart('Sage Grace Dress', 2999)">
+
+                ADD TO BAG
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+    <div class="product">
+
+        <div class="product-img">
+            <img
+                src="images/top.jpg.jpg"
+                alt="Champagne Silk Top">
+        </div>
+
+        <div class="product-info">
+
+            <h3>
+                Champagne Silk Top
+            </h3>
+
+            <p>
+                ₹1,899
+            </p>
+
+            <button
+                onclick="addToCart('Champagne Silk Top', 1899)">
+
+                ADD TO BAG
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= BRAND STORY ================= -->
+
+<section id="about" class="story">
+
+    <div>
+
+        <p class="small-title">
+            OUR STORY
+        </p>
+
+        <h2>
+            Tradition,<br>
+            Reimagined.
+        </h2>
+
+    </div>
+
+
+    <div class="story-text">
+
+        <p>
+            KRISHARA is created for the modern woman who loves
+            individuality, elegance and timeless style.
+        </p>
+
+        <p>
+            Every collection brings together contemporary
+            silhouettes and the beauty of Indian craftsmanship.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+    <p class="small-title">
+        JOIN KRISHARA
+    </p>
+
+    <h2>
+        Be the first to discover.
+    </h2>
+
+    <p>
+        New collections, stories and exclusive launches.
+    </p>
+
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Your email address">
+
+
+    <button onclick="subscribe()">
+
+        JOIN US
+
+    </button>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="contact">
+
+    <h2>
+        KRISHARA
+    </h2>
+
+    <p>
+        Where tradition meets modern elegance.
+    </p>
+
+    <p>
+        Email: hello@krishara.com
+    </p>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 KRISHARA. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
